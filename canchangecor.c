@@ -4,6 +4,7 @@ int canchange(int n)
     int a, min;
     if (n == 0)
         return 0;
+    //You can use your own values
     if ((n == 3) || (n == 8) || (n == 10))
         return 1;
     if (n < 3)
