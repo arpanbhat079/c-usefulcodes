@@ -37,7 +37,7 @@ void multiply_poly(term *poly1, term *poly2, int n1, int n2)
     {
         for (int j = 0; j < n2; j++)
         {
-            p3[i + j].coeff = poly1[i].coeff * poly2[j].coeff;
+            p3[i + j].coeff += poly1[i].coeff * poly2[j].coeff;
         }
     }
     print_poly(p3, n1 + n2 - 1);
